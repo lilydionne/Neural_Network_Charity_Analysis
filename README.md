@@ -6,8 +6,10 @@ Alphabet Soup is looking to create a machine learning and neural network capable
 
 ## Results
 
-### Data Pre-processing
+### Data Pre-Processing
 
-### Compiling, Training & Evaluating the Model
+### Optimitizations
+ - Optimization 1: Increased the class_counts < value from 1800 to 2000 reducing the number of classification values from 6 to 4. With optimization, the Accuracy Score dropped from 0.7291 to 0.7268. Therefore the class_count will be reset back to 1800 before the next optimization
+ - Optimization 2:  
 
 ## Summary
