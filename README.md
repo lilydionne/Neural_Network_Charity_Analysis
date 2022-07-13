@@ -7,9 +7,16 @@ Alphabet Soup is looking to create a machine learning and neural network capable
 ## Results
 
 ### Data Pre-Processing
+ - The target variables in this model is: Whether the investment was successful and funds used effectively
+ - Features for the model were: application type and classification
+ - Columns - EIN and Name were remvoed as they proved to not be useful in this model
 
 ### Optimitizations
  - Optimization 1: Increased the class_counts < value from 1800 to 2000 reducing the number of classification values from 6 to 4. With optimization, the Accuracy Score dropped from 0.7291 to 0.7268. Therefore the class_count will be reset back to 1800 before the next optimization
- - Optimization 2:  
+ - Optimization 2: In this optimization, I added a third hidden layer with 15 nodes in order to allow for a more granular representation of the data. Unfortunately, this update was only able to increase the accurancy score to 0.7293, only a slight improvement over the original data.
+ - Optimization 3: In order to see increased accuracy, we gave the mode an additional hidden layer (fourth layer), increased nodes for second and third layers, and increased the epochs from 100 to 200. While this doubled the amount of time it took for our code run, we did see accuracy improve to 0.7303.
+
+Unfortunately, the optimizations made did not result in achieveing our goal of 75%. Future optimizations we can try are to add additiionl hidden layers. 
 
 ## Summary
+Increasing the number of hidden layers might improve the accuracy or might not, it really depends on the complexity of the problem. The more hidden layers the model has, the "deeper" the deep learning can go. Increasing our epoch helps to ensure that we are not underfitting our data, but cautious must be used to ensure we do not overfit the data as well. 
