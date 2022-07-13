@@ -7,9 +7,9 @@ Alphabet Soup is looking to create a machine learning and neural network capable
 ## Results
 
 ### Data Pre-Processing
- - The target variables in this model is: Whether the investment was successful and funds used effectively
- - Features for the model were: application type and classification
- - Columns - EIN and Name were remvoed as they proved to not be useful in this model
+ - Model Target Variables: "IS_SUCCESSFUL" column is used as the y value to determine where or not the funds were used successfully
+ - Model Features Variables: 'APPLICATION_TYPE', 'AFFILIATION', 'CLASSIFICATION', 'USE_CASE', 'ORGANIZATION', 'INCOME_AMT', 'SPECIAL_CONSIDERATIONS', 'ASK_AMOUNT', and 'INCOME_AMOUNT'
+ - Model Features Elimination: 'EIN' and 'Name' were remvoed as they are not useful data for this model
 
 ### Optimitizations
  - Optimization 1: Increased the class_counts < value from 1800 to 2000 reducing the number of classification values from 6 to 4. With optimization, the Accuracy Score dropped from 0.7291 to 0.7268. Therefore the class_count will be reset back to 1800 before the next optimization
